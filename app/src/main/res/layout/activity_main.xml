@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/divisaobtn"
+        android:layout_width="169dp"
+        android:layout_height="154dp"
+        android:background="@drawable/background_btn"
+        android:text="Divisão"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/multiplicacaobtn"
+        app:layout_constraintTop_toBottomOf="@+id/subtrairbtn"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multiplicacaobtn"
+        android:layout_width="169dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/background_btn"
+        android:text="Multiplicação"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/somabtn"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="416dp"
+        android:layout_height="63dp"
+        android:background="@drawable/background"
+        android:includeFontPadding="false"
+        android:paddingLeft="110dp"
+        android:paddingTop="10dp"
+        android:text="Calculadora"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/somabtn"
+        android:layout_width="169dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/background_btn"
+        android:text="Soma"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toStartOf="@+id/subtrairbtn"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/subtrairbtn"
+        android:layout_width="169dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_btn"
+        android:text="Subtração"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
